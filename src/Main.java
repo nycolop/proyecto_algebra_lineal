@@ -1,5 +1,3 @@
-import static encrypted.HillCipher.decrypt;
-import static encrypted.HillCipher.encrypt;
 import static encrypted.MatrizEncripted.encriptacion;
 
 import encrypted.MatrizEncripted;
