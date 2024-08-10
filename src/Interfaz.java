@@ -17,7 +17,7 @@ public class Interfaz extends JFrame {
 
   public Interfaz() {
     setTitle("Proyecto algebra linear - Encriptar/Desencriptar");
-    setSize(520, 600);
+    setSize(520, 550);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     JPanel panel = new JPanel();
@@ -33,7 +33,7 @@ public class Interfaz extends JFrame {
     JTextArea creditos = new JTextArea("Hecho por: \nNicolas \nLuciano \nCarla \nMicaela");
     titulo.setBounds(100, 20, 300, 100);
     subtitulo.setBounds(100, 40, 300, 100);
-    creditos.setBounds(100, 400, 200, 200);
+    creditos.setBounds(100, 350, 200, 200);
 
     creditos.setBackground(new Color(238, 238, 238));
     titulo.setFont(new Font("Arial", Font.BOLD, 24));
@@ -56,18 +56,20 @@ public class Interfaz extends JFrame {
 
     JLabel textoOutputPrefix = new JLabel("Salida: ");
     textoOutputPrefix.setBounds(100 , 100 + 50, 100, 100);
+    textoOutputPrefix.setFont(new Font("Arial", Font.BOLD, 18));
     panel.add(textoOutputPrefix);
 
     JLabel textoOutput = new JLabel("");
-    textoOutput.setBounds(150, 100 + 50, 100, 100);
+    textoOutput.setBounds(170, 100 + 50, 100, 100);
+    textoOutput.setFont(new Font("Arial", Font.BOLD, 18));
     panel.add(textoOutput);
 
     JButton botonEncriptar = new JButton("Encriptar");
-    botonEncriptar.setBounds(100, 220 + 50, 300, 25);
+    botonEncriptar.setBounds(100, 220+20, 300, 25);
     panel.add(botonEncriptar);
 
     JButton botonDesencriptar = new JButton("Desencriptar");
-    botonDesencriptar.setBounds(100, 260 + 50, 300, 25);
+    botonDesencriptar.setBounds(100, 260+20, 300, 25);
     panel.add(botonDesencriptar);
 
     botonEncriptar.addActionListener(new ActionListener() {
